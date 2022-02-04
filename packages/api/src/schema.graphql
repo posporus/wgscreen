@@ -1,0 +1,32 @@
+type Flat {
+    name:String
+    id:String
+    mates:[Mate]
+    tasks:[Task]
+}
+
+type Mate {
+    name:String
+    id:String
+    flat:Flat
+}
+
+type Task {
+    name:String
+    id:String
+
+}
+type MateTaskRelationship {
+    taskId:Task.id
+    mateId:Mate.id
+}
+
+type Mutation {
+    addMate(name:String): Mate
+    addTask(name:String):Task   
+}
+
+type Query {
+    getTask(id:Mate.id): Task
+    getMate(id:Task.id): Mate
+}

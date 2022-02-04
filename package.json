@@ -1,0 +1,17 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn workspace frontend dev",
+    "build:telegram": "yarn workspace telegram build",
+    "watch:telegram": "yarn workspace telegram watch"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "packageManager": "yarn@3.1.1"
+}

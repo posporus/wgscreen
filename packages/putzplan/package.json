@@ -1,0 +1,11 @@
+{
+  "name": "putzplan",
+  "version": "1.0.0",
+  "main": "src/index.mjs",
+  "private":true,
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "unbuild": "^0.6.9"
+  }
+}
