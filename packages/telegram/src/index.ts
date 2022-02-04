@@ -1,4 +1,6 @@
-const BOT_TOKEN = '1079748976:AAEbYnMgSjfuRVjb-BQrxw1049Bx2R7LD6g'
+
+
+const BOT_TOKEN = process.env.BOT_TOKEN
 import { Bot } from "grammy"
 import { Menu } from "@grammyjs/menu"
 
