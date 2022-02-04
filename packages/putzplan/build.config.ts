@@ -8,5 +8,5 @@ export default defineBuildConfig({
             outDir: 'dist'
         }
     ],
-    //@ts-checkdeclaration:true,
+    declaration: true
 })
