@@ -6,7 +6,7 @@
   "dependencies": {
     "apollo-server": "^3.6.2",
     "graphql": "^16.3.0",
-    "putzplan": "latest"
+    "putzplan": "file:../putzplan"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
@@ -17,6 +17,5 @@
     "tsnode": "yarn ts-node ./src/index.ts",
     "dev": "yarn nodemon --exec yarn tsnode --watch src/** --ext ts,json",
     "build": "npx tsc"
-  },
-  "packageManager": "yarn@3.1.1"
+  }
 }
